@@ -1,0 +1,51 @@
+    .tools-container {
+        background: var(--bg-surface);
+        padding: 40px;
+        border-radius: var(--border-radius);
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow);
+    }
+
+    .tool-group {
+        margin-bottom: 30px;
+    }
+
+    .tool-group:last-child {
+        margin-bottom: 0;
+    }
+
+    .tool-group h3 {
+        margin-bottom: 20px;
+        color: var(--primary-color);
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .tools-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .tool-badge {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--bg-body);
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-weight: 500;
+        color: var(--text-primary);
+        border: 1px solid var(--border-color);
+        transition: all 0.2s;
+    }
+
+    .tool-badge:hover {
+        border-color: var(--primary-color);
+        transform: translateY(-2px);
+    }
+
+    .tool-badge i {
+        font-size: 1.2rem;
+    }

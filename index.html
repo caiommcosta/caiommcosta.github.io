@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caio Costa | Portfólio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/sections/projects.css">
+    <link rel="stylesheet" href="./css/sections/services.css">
+    <link rel="stylesheet" href="./css/sections/tools.css">
+
+    <!-- Ícones (Phosphor Icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body id="top">
+
+    <!-- 1. Header Principal -->
+    <header id="main-header" class="header-fixed">
+        <div class="header-content">
+            <!-- Logo -->
+            <a href="#top" class="logo-container hidden" id="header-logo">
+                <span class="logo-text">Caio Costa</span>
+            </a>
+
+            <!-- Navegação Desktop (Oculta no Mobile) -->
+            <nav class="main-nav desktop-only">
+                <ul class="nav-list">
+                    <li><a href="#top">Início</a></li>
+                    <li><a href="#footer">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Ações Direita -->
+            <div class="header-actions">
+                <!-- Botão Toggle Tema -->
+                <button id="theme-toggle" aria-label="Alternar tema">
+                    <i class="ph ph-moon"></i>
+                </button>
+
+                <!-- Botão Menu Mobile (Só aparece no mobile) -->
+                <button id="mobile-menu-btn" class="mobile-only" aria-label="Abrir menu">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Suspenso (Inicialmente oculto) -->
+        <div id="mobile-nav-overlay" class="mobile-nav-overlay">
+            <ul class="mobile-nav-list">
+                <li><a href="#top" class="mobile-link">Início</a></li>
+                <li><a href="#footer" class="mobile-link">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 2. Div Global (Wrapper) -->
+    <div class="app-wrapper">
+
+        <!-- 3. Seção de Apresentação (Hero) -->
+        <section id="hero" class="hero-section">
+            <div class="hero-grid">
+                <!-- Esquerda -->
+                <div class="hero-visual">
+                    <div class="profile-image-container">
+                        <img src="./images/profile.jpg" alt="Foto de Perfil" class="profile-img">
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/caiommcosta" rel="noopener noreferrer" target="_blank"
+                            aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="https://github.com/caiommcosta" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+                        <a href="https://www.instagram.com/caionak/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                    </div>
+                </div>
+
+                <!-- Direita -->
+                <div class="hero-content">
+                    <h1 class="hero-title">Olá, sou <span class="highlight">Caio Costa</span></h1>
+                    <p class="hero-description">
+                        Desenvolvedor Full Stack apaixonado por criar soluções digitais elegantes e funcionais.
+                        Especialista em transformar ideias complexas em código limpo e escalável.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#footer" class="btn btn-primary">Entrar em Contato</a>
+                        <a href="./cv/Currículo.pdf" class="btn btn-outline" download rel="noopener noreferrer"
+                            target="_blank">
+                            Baixar CV
+                            <i class="ph ph-download-simple">
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Container para Conteúdo Dinâmico (JS) -->
+        <main id="dynamic-content">
+
+            <!-- Segundo Header (Inicialmente oculto / Opacidade 0) -->
+            <nav id="section-nav" class="sticky-nav hidden-nav">
+                <ul class="section-nav-list">
+                    <li><button data-target="services" class="nav-pill active">Serviços</button></li>
+                    <li><button data-target="projects" class="nav-pill">Projetos</button></li>
+                    <li><button data-target="tools" class="nav-pill">Ferramentas</button></li>
+                </ul>
+            </nav>
+
+            <!-- As seções serão injetadas aqui -->
+            <div id="sections-container"></div>
+        </main>
+
+        <!-- NOVA SEÇÃO: Call to Action (CTA) -->
+        <section id="cta" class="cta-section">
+            <h2 class="cta-title">Vamos construir algo extraordinário!</h2>
+            <p class="cta-text">
+                Do conceito à realidade. Tem um desafio técnico ou uma ideia visionária?
+                Estou pronto para colaborar e transformar sua visão em uma experiência digital única.
+            </p>
+            <a href="#footer" class="btn btn-primary btn-large">Começar Projeto</a>
+        </section>
+
+    </div> <!-- Fim da Div Global -->
+
+    <!-- 4. Footer -->
+    <footer id="footer" class="main-footer">
+        <div class="footer-content">
+            <h3>Vamos conversar?</h3>
+            <p>caiomarcelomadeira@hotmail.com | (31) 99817-0665</p>
+
+            <!-- Redes Sociais no Footer -->
+            <div class="footer-socials social-icons">
+                <a href="https://linkedin.com/in/caiommcosta" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                <a href="https://github.com/caiommcosta" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+                <a href="https://www.instagram.com/caionak/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                <a href="https://wa.me//5531998170665" target="_blank" rel="noopener noreferrer"
+                    aria-label="Whatsapp"><i class="ph ph-whatsapp-logo"></i></a>
+            </div>
+
+            <p class="copyright">&copy; 2025 Caio Costa</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/index.js"></script>
+    <script src="scripts/styleSwitcher.js"></script>
+</body>
+
+</html>
