@@ -3,13 +3,14 @@
    ========================================= */
 :root {
     --header-height: 70px;
-    --second-header-height: 75px;
+    --second-header-height: 78px;
     --wrapper-width: 1100px;
     --wrapper-padding: 2rem;
     --border-radius: 8px;
 
     --bg-body: #f4f4f9;
     --bg-surface: #ffffff;
+    --bg-gradient: linear-gradient(135deg, var(--bg-surface) 0%, rgba(37, 99, 235, 0.05) 100%);
     --text-primary: #1a1a1a;
     --text-secondary: #666666;
     --primary-color: #2563eb;
@@ -102,6 +103,12 @@ img {
     color: var(--primary-color);
     transition: opacity 0.4s ease, transform 0.4s ease;
     cursor: pointer;
+}
+
+.logo-img {
+    height: 32px;
+    width: auto;
+    display: block;
 }
 
 .logo-container.hidden {
@@ -332,7 +339,7 @@ img {
     position: -webkit-sticky;
     position: sticky;
     top: var(--second-header-height);
-    background-color: var(--bg-body);
+    background-color: var(--bg-surface);
     padding: 5px 0;
     z-index: 900;
     border-radius: 40px;
@@ -387,7 +394,7 @@ img {
 .cta-section {
     padding: 80px 0;
     text-align: center;
-    background: linear-gradient(135deg, var(--bg-surface) 0%, rgba(37, 99, 235, 0.05) 100%);
+    background: var(--bg-gradient);
     border-radius: var(--border-radius);
     margin: 60px 0;
     border: 1px solid var(--border-color);
