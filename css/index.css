@@ -79,7 +79,6 @@ img {
     z-index: 1000;
     display: flex;
     flex-direction: column;
-    /* Alterado para permitir menu dropdown */
     justify-content: center;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -93,7 +92,6 @@ img {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    /* Ocupa altura do header */
 }
 
 /* Logo */
@@ -340,10 +338,14 @@ img {
     position: sticky;
     top: var(--second-header-height);
     background-color: var(--bg-surface);
-    padding: 5px 0;
+    padding: 5px;
     z-index: 900;
     border-radius: 40px;
-    /* Animação de Entrada/Saída */
+    box-shadow: var(--shadow);
+
+    width: fit-content;
+    margin: 0 auto;
+
     transition: opacity 0.4s ease, transform 0.4s ease;
     border: 1px solid var(--border-color);
 }
@@ -484,6 +486,11 @@ img {
 
     .hero-actions {
         justify-content: center;
+    }
+
+    /* Desabilitar segundo header*/
+    .sticky-nav {
+        display: none !important;
     }
 
     .profile-image-container {

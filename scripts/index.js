@@ -11,7 +11,7 @@ async function initApp() {
         initScrollLogic();
         initStickyNav();
         initLogoClick();
-        initMobileMenu(); // Nova função do menu mobile
+        initMobileMenu();
     }, 100);
 }
 
