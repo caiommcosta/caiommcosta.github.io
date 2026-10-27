@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentTheme = htmlElement.getAttribute("data-theme");
     const newTheme = currentTheme === "light" ? "dark" : "light";
 
-    // Atualiza atributo HTML
+    // Atualiza HTML
     htmlElement.setAttribute("data-theme", newTheme);
 
     // Salva preferência
